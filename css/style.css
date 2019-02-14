@@ -1,5 +1,5 @@
 * {
-	font: 'Cambria Math';
+	font-family: "Cambria Math", Times, serif;
 }
 
 /***********Main Page Styling***************/
@@ -10,5 +10,13 @@
 	width: 100%;
 	text-align: center;
 	float: right;
-	font-size: 50px;
+	font-size: 34px;
+}
+.nav {
+	font-size: 24px;
+	width: 60%;
+	text-align: left;
+}
+.nav ul {
+	list-style-type: disc;
 }
