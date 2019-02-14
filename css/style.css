@@ -1,0 +1,14 @@
+* {
+	font: 'Cambria Math';
+}
+
+/***********Main Page Styling***************/
+.home{
+	width: 100%;
+}
+.header {
+	width: 100%;
+	text-align: center;
+	float: right;
+	font-size: 50px;
+}
