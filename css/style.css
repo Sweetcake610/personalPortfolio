@@ -47,25 +47,27 @@
 .about {
 	width: 100%;
 	background-color: rgb(240, 77, 152);
-	height: 400px;
+	height: 370px;
 }
 .about-info {
-	width: 90%;
+	width: 95%;
+	margin: 0 auto;
+	padding: 10px 5px 5px 5px;
+	height: 350px;
 }
 .about-info h2 {
-	font-size: 28px;
-	margin: 10px 0 5px 10px;
-	padding-top: 10px;
+	font-size: 34px;
+	margin: 10px 0 5px 0;
 }
 .about-info p {
-	font-size: 18px;
-	margin: 10px 0 5px 20px;
+	font-size: 20px;
+	width: 70%;
+	margin: 10px 0;
 }
 .photo {
-	width: 30%;
 	float: right;
-	height: 280px;
-	margin: 10px 0 5px 20px;
+	width: 26%;
+	height: 100%;
 }
 .photo img {
 	width: 100%;
