@@ -7,13 +7,13 @@
 	width: 100%;
 }
 .header {
-	width: 100%;
-	/* text-align: center; */
+	width: 60%;
 	float: right;
 	font-size: 34px;
 }
 .header h1 {
 	text-align: center;
+	line-height: 1.4em;
 }
 .nav {
 	font-size: 24px;
@@ -31,3 +31,14 @@
 	text-align: center;
 	font-size: 18px;
 }
+/**************Styling About Section****************/
+
+
+
+
+
+
+
+
+
+/*****************Styling Project Section**************/
