@@ -8,15 +8,26 @@
 }
 .header {
 	width: 100%;
-	text-align: center;
+	/* text-align: center; */
 	float: right;
 	font-size: 34px;
+}
+.header h1 {
+	text-align: center;
 }
 .nav {
 	font-size: 24px;
 	width: 60%;
 	text-align: left;
+	line-height: 2.0em;
 }
 .nav ul {
 	list-style-type: disc;
+}
+#quote {
+	width: 30%;
+	margin-left: 100px;
+	line-height: 1.5em;
+	text-align: center;
+	font-size: 18px;
 }
