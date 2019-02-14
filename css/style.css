@@ -16,13 +16,25 @@
 	line-height: 1.4em;
 }
 .nav {
-	font-size: 24px;
+	font-size: 28px;
 	width: 60%;
 	text-align: left;
-	line-height: 2.0em;
+	line-height: 2.2em;
 }
 .nav ul {
 	list-style-type: disc;
+}
+.nav ul #a {
+	position: relative;
+	left: 20px;
+}
+.nav ul #b {
+	position: relative;
+	left: 20px;
+}
+.nav ul #c {
+	position: relative;
+	left: 20px;
 }
 #quote {
 	width: 30%;
@@ -32,13 +44,29 @@
 	font-size: 18px;
 }
 /**************Styling About Section****************/
-
-
-
-
-
-
-
-
+.about {
+	width: 100%;
+	background-color: rgb(240, 77, 152);
+	height: 300px;
+}
+.about-info {
+	width: 70%;
+}
+.about-info h2 {
+	font-size: 28px;
+	width: 60%;
+	margin-left: 10px;
+}
+.about-info p {
+	font-size: 18px;
+	width: 60%;
+	margin-left: 20px;
+}
+.about-info img {
+	width: 30%;
+	float: right;
+	height: 200px;
+}
+	
 
 /*****************Styling Project Section**************/
