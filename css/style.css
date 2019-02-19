@@ -1,5 +1,6 @@
 * {
 	font-family: "Cambria Math", Times, serif;
+	/* margin: 0 auto; */
 }
 
 /***********Main Page Styling***************/
@@ -16,25 +17,26 @@
 	line-height: 1.4em;
 }
 .nav {
-	font-size: 28px;
-	width: 0%;
+	font-size: 32px;
 	text-align: left;
 	line-height: 2.2em;
+	position: relative;
+	top: 140px;
 }
 .nav ul {
 	list-style-type: disc;
 }
 .nav ul #a {
 	position: relative;
-	left: 20px;
+	left: 30px;
 }
 .nav ul #b {
 	position: relative;
-	left: 20px;
+	left: 30px;
 }
 .nav ul #c {
 	position: relative;
-	left: 20px;
+	left: 30px;
 }
 #quote {
 	width: 30%;
@@ -42,12 +44,16 @@
 	line-height: 1.5em;
 	text-align: center;
 	font-size: 18px;
+	display: flex;
+	position: relative;
+	top: 240px;
 }
 /**************Circle Graphic Section****************/
 .graphic {
-	width: 90%;
+	width: 100%;
 	display: flex;
-	/* margin: 0 auto; */
+	position: absolute;
+	top: 150px;
 }
 .circle {
 	background-color: rgb(240, 77, 152);
@@ -67,8 +73,8 @@
 	height: 60px;
 	order: 2;
 	position: relative;
-	top: -100px;
-	left: 40px;
+	top: -80px;
+	left: 35px;
 }
 .three {
 	width: 100px;
@@ -101,11 +107,16 @@
 	top: 140px;
 	left: 140px;
 }
+#graphic-photo {
+	margin: 0 auto;
+	height: 100px;
+}
 /**************Styling About Section****************/
 .about {
 	width: 100%;
 	background-color: rgb(240, 77, 152);
 	height: 370px;
+	margin-top: 100px;
 }
 .about-info {
 	width: 95%;
