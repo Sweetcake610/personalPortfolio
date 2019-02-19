@@ -9,7 +9,7 @@
 .header {
 	width: 60%;
 	float: right;
-	font-size: 34px;
+	font-size: 40px;
 }
 .header h1 {
 	text-align: center;
@@ -17,7 +17,7 @@
 }
 .nav {
 	font-size: 28px;
-	width: 60%;
+	width: 0%;
 	text-align: left;
 	line-height: 2.2em;
 }
@@ -42,6 +42,64 @@
 	line-height: 1.5em;
 	text-align: center;
 	font-size: 18px;
+}
+/**************Circle Graphic Section****************/
+.graphic {
+	width: 90%;
+	display: flex;
+	/* margin: 0 auto; */
+}
+.circle {
+	background-color: rgb(240, 77, 152);
+	border-radius: 50%;
+	display: flex;
+}
+.one {
+	width: 40px;
+	height: 40px;
+	order: 1;
+	position: relative;
+	top: -20px;
+	left: 20px;
+}
+.two {
+	width: 60px;
+	height: 60px;
+	order: 2;
+	position: relative;
+	top: -100px;
+	left: 40px;
+}
+.three {
+	width: 100px;
+	height: 100px;
+	order: 3;
+	position: relative;
+	top: -60px;
+	left: 60px;
+}
+.four {
+	width: 140px;
+	height: 140px;
+	order: 4;
+	position: relative;
+	left: 80px;
+}
+.five {
+	width: 180px;
+	height: 180px;
+	order: 5;
+	position: relative;
+	top: 80px;
+	left: 110px;
+}
+.six {
+	width: 600px;
+	height: 600px;
+	order: 6;
+	position: relative;
+	top: 140px;
+	left: 140px;
 }
 /**************Styling About Section****************/
 .about {
