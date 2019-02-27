@@ -1,14 +1,17 @@
 * {
 	font-family: "Cambria Math", Times, serif;
-	/* margin: 0 auto; */
+	 /* margin: 0 auto;  */
 }
 
 /***********Main Page Styling***************/
 .home{
 	width: 100%;
+	margin: 0 auto;
+	/* border: 1px solid black; */
 }
 .header {
-	width: 60%;
+	width: 50%;
+	margin: 0 auto;
 	float: right;
 	font-size: 40px;
 }
@@ -22,6 +25,7 @@
 	line-height: 2.2em;
 	position: relative;
 	top: 140px;
+	left: 50px;
 }
 .nav ul {
 	list-style-type: disc;
@@ -40,17 +44,18 @@
 }
 #quote {
 	width: 30%;
-	margin-left: 100px;
+	margin-left: 200px;
 	line-height: 1.5em;
 	text-align: center;
 	font-size: 18px;
 	display: flex;
 	position: relative;
-	top: 240px;
+	top: 280px;
 }
 /**************Circle Graphic Section****************/
 .graphic {
-	width: 100%;
+	width: 90%;
+	margin: 0 auto;
 	display: flex;
 	position: absolute;
 	top: 150px;
@@ -59,6 +64,7 @@
 	background-color: rgb(240, 77, 152);
 	border-radius: 50%;
 	display: flex;
+	margin: 0 auto;
 }
 .one {
 	width: 40px;
@@ -74,7 +80,7 @@
 	order: 2;
 	position: relative;
 	top: -80px;
-	left: 35px;
+	left: 25px;
 }
 .three {
 	width: 100px;
@@ -82,14 +88,14 @@
 	order: 3;
 	position: relative;
 	top: -60px;
-	left: 60px;
+	left: 40px;
 }
 .four {
 	width: 140px;
 	height: 140px;
 	order: 4;
 	position: relative;
-	left: 80px;
+	left: 60px;
 }
 .five {
 	width: 180px;
@@ -97,7 +103,7 @@
 	order: 5;
 	position: relative;
 	top: 80px;
-	left: 110px;
+	left: 100px;
 }
 .six {
 	width: 600px;
@@ -105,7 +111,7 @@
 	order: 6;
 	position: relative;
 	top: 140px;
-	left: 140px;
+	left: 100px;
 }
 #graphic-photo {
 	margin: 0 auto;
@@ -117,6 +123,8 @@
 	background-color: rgb(240, 77, 152);
 	height: 370px;
 	margin-top: 100px;
+	position: relative;
+	top: 400px;
 }
 .about-info {
 	width: 95%;
@@ -125,22 +133,33 @@
 	height: 350px;
 }
 .about-info h2 {
-	font-size: 34px;
+	font-size: 36px;
 	margin: 10px 0 5px 0;
 }
 .about-info p {
-	font-size: 20px;
-	width: 70%;
+	font-size: 26px;
+	width: 60%;
 	margin: 10px 0;
 }
 .photo {
 	float: right;
-	width: 26%;
 	height: 100%;
 }
 .photo img {
-	width: 100%;
+	width: 75%;
+	height: 75%;
 }
 	
 
 /*****************Styling Project Section**************/
+
+
+
+/*****************Styling Footer Section**************/
+.footer {
+	width: 100%;
+	background-color: rgb(240, 77, 152);
+	height: 50px;
+	position: relative;
+	top: 400px;
+}
