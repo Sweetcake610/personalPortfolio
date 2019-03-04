@@ -13,14 +13,14 @@
 	width: 50%;
 	margin: 0 auto;
 	float: right;
-	font-size: 40px;
+	font-size: 42px;
 }
 .header h1 {
 	text-align: center;
 	line-height: 1.4em;
 }
 .nav {
-	font-size: 32px;
+	font-size: 36px;
 	text-align: left;
 	line-height: 2.2em;
 	position: relative;
@@ -149,8 +149,6 @@
 	width: 75%;
 	height: 75%;
 }
-	
-
 /*****************Styling Project Section**************/
 
 
@@ -158,6 +156,7 @@
 /*****************Styling Footer Section**************/
 .footer {
 	width: 100%;
+	margin: 0 auto;
 	background-color: rgb(240, 77, 152);
 	height: 50px;
 	position: relative;
