@@ -6,12 +6,9 @@ let a = 0;
 function circleAnimation(circles) {
 	const circlesArray = [...circles];
 	for(let i = 0; i < circlesArray.length; i++) {
+		circlesArray[i].addEventListener('load', setInterval(circleAnimation, 3000));
 		circlesArray[i].classList.toggle('noShow');
-	}	
+	}
+	clearInterval(circleAnimation);	
 }
 
-do{
-	circles.addEventListener('load', setInterval(circleAnimation, 600000));
-	clearInterval(circleAnimation);
-	a++;
-}while(a < 10);
