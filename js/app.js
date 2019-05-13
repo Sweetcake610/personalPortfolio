@@ -1,14 +1,21 @@
 // JavaScript File. Adding animation to main page and adding project section
 
-let circles = document.getElementsByClassName('circle');
-let a = 0;
+let circles = document.querySelectorAll('.circle');
+let graphic = document.getElementById('graphic');
+let circlesArray = [...circles];
 
-function circleAnimation(circles) {
-	const circlesArray = [...circles];
+// circlesArray.forEach(function(circleItem) {
+	// circleItem.classList.toggle('noShow');
+// });
+
+function circleAnimation(evt) {
 	for(let i = 0; i < circlesArray.length; i++) {
-		circlesArray[i].addEventListener('load', setInterval(circleAnimation, 3000));
-		circlesArray[i].classList.toggle('noShow');
+		circlesArray[i] = evt.target;
+		cirlcesArray[i].classList.toggle('noShow');
 	}
-	clearInterval(circleAnimation);	
 }
 
+
+for(let j = 0; j < circlesArray.length; j++) {
+	circlesArray[j].addEventListener('load', circleAnimation, false);
+}
