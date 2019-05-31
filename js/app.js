@@ -19,3 +19,6 @@ function circleAnimation(evt) {
 for(let j = 0; j < circlesArray.length; j++) {
 	circlesArray[j].addEventListener('load', circleAnimation, false);
 }
+
+//Adding projects to project section 
+
