@@ -27,6 +27,8 @@
 }
 .nav ul {
 	list-style-type: disc;
+	position: relative;
+	left: 30px;
 }
 .nav ul #a {
 	position: relative;
@@ -42,13 +44,14 @@
 }
 #quote {
 	width: 30%;
-	margin-left: 200px;
-	line-height: 1.5em;
-	text-align: center;
-	font-size: 18px;
-	display: flex;
+	margin-left: 100px;
 	position: relative;
 	top: 280px;
+}
+#quote p {
+	line-height: 1.5em;
+	text-align: center;
+	font-size: 22px;
 }
 /**************Circle Graphic Section****************/
 #graphic {
@@ -120,20 +123,14 @@
 	height: 600px;
 }
 /**************Styling About Section****************/
-/* .about {
-	width: 100%;
-	height: 500px;
-	
-	margin-top: 100px;
-	position: relative;
-	top: 400px;
-} */
 .about-info {
 	width: 100%;
 	background-color: rgb(240, 77, 152);
+	border: 4px solid black;
+	border-radius: 10px;
 	margin: 0 auto;
-	padding: 10px 5px 5px 5px;
-	height: 350px;
+	padding: 10px 5px 5px 20px;
+	height: 380px;
 }
 .about-info h2 {
 	font-size: 36px;
@@ -155,24 +152,37 @@
 /*****************Styling Project Section**************/
 #project {
 	width: 100%;
-	height: 500px;
+	height: 400px;
+	display: flex;
+	flex-wrap: wrap;
 }
 .project-info {
-	width: 30px;
-	height: 40px;
-	margin: 0 auto;
-	padding: 10px 5px;
+	width: 250px;
+	height: 120px;
+	margin: 40px 20px 20px 0px;
+	padding: 5px 5px;
 	background-color: rgb(240, 77, 152);
+	border: 4px solid black;
+	border-radius: 10px;
+	/* box-shadow: 5px 10px #000; */
+}
+.project-info h3, p {
+	margin: 5px auto;
 }
 
 
 /*****************Styling Footer Section**************/
 .footer {
 	width: 100%;
-	height: 200px;
+	height: 250px;
 	margin: 0 auto;
+	padding: 10px;
 	background-color: rgb(240, 77, 152);
 	height: 50px;
-	position: relative;
-	top: 400px;
+	border: 4px solid black;
+	border-radius: 10px;
+	/* top: 400px; */
+}
+.footer h3 {
+	margin: 0 auto;
 }
