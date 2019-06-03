@@ -33,12 +33,14 @@ class Project {
 	get projectInfo () {
 		let projectDiv = document.createElement('div');
 		projectDiv.setAttribute('class', 'project-info');
-		projectDiv.innerHTML = '<h3>Project Title:' + this._title + '</h3>' +
-								'<p>Description:' + this._description + '<br>Year Completed:' +
-								this._year + '<br>Source:' + this._source + '</p>';
+		projectDiv.innerHTML = '<h3>Project Title: ' + this._title + '</h3>' +
+								'<p>Description: ' + this._description + '<br>Year Completed: ' +
+								this._year + '<br>Source: ' + this._source + '</p>';
 		projectSection.appendChild(projectDiv);
 	}
 	
 }
 let projectOne = new Project('C&L Catering Distribution', 'Create full live website', '2019', 'http://...');
+let projectTwo = new Project("Ms. Margie's", "Food Distribution Website", "2019", "http//....");
 projectOne.projectInfo;
+projectTwo.projectInfo;
