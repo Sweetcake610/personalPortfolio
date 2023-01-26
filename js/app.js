@@ -42,5 +42,7 @@ class Project {
 }
 let projectOne = new Project('C&L Catering Distribution', 'Create full live website', '2019', 'http://...');
 let projectTwo = new Project("Ms. Margie's", "Food Distribution Website", "2019", "http//....");
+let projectThree = new Project('Easyl', 'Art Informational Website', '2023', 'http://easyl.com');
 projectOne.projectInfo;
 projectTwo.projectInfo;
+projectThree.projectInfo;
