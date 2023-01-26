@@ -6,7 +6,7 @@
 /***********Main Page Styling***************/
  .header{
 	width: 100%;
-	height: 1000px;
+	height: 980px;
 	margin: 0 auto;
 } 
 .header h1 {
@@ -41,6 +41,16 @@
 .nav ul #c {
 	position: relative;
 	left: 30px;
+}
+.nav a {
+	text-decoration: none;
+}
+.nav a:link, a:visited {
+	color: #000;
+	text-decoration: none;
+}
+.nav a:hover {
+	color:  rgb(240, 77, 152);
 }
 #quote {
 	width: 30%;
@@ -126,7 +136,7 @@
 .about-info {
 	width: 100%;
 	background-color: rgb(240, 77, 152);
-	border: 4px solid black;
+	/* border: 4px solid black; */
 	border-radius: 10px;
 	margin: 0 auto;
 	padding: 10px 5px 5px 20px;
@@ -156,15 +166,22 @@
 	display: flex;
 	flex-wrap: wrap;
 }
+#projectTitle {
+	font-size: 36px;
+	margin: 20px 0 5px 0;
+}
 .project-info {
 	width: 250px;
 	height: 120px;
-	margin: 40px 20px 20px 0px;
+	margin: 20px 20px 20px 0px;
 	padding: 5px 5px;
 	background-color: rgb(240, 77, 152);
-	border: 4px solid black;
+	/* border: 4px solid black; */
+	box-shadow: 6px 10px rgb(232, 127, 176);
 	border-radius: 10px;
-	/* box-shadow: 5px 10px #000; */
+}
+.project-info:hover {
+	background-color: white;
 }
 .project-info h3, p {
 	margin: 5px auto;
@@ -179,7 +196,7 @@
 	padding: 10px;
 	background-color: rgb(240, 77, 152);
 	height: 50px;
-	border: 4px solid black;
+	/* border: 4px solid black; */
 	border-radius: 10px;
 	/* top: 400px; */
 }
