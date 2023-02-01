@@ -4,60 +4,78 @@
 
 <head>
 	<title>Aisha's Portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/mobilestyle.css">
+	<script src="https://kit.fontawesome.com/5af55e7126.js" crossorigin="anonymous" async></script>
 </head>
 
 <body>
 	<header>
-		<h1>Aisha Coles <br> Full Stack Software Developer</h1>
+		<h1 class="name">Aisha Coles <br> Full Stack Software Developer</h1>
 		<ul class="nav">
-			<li><a href="#">Contact</a></li>
-			<li><a href="#aboutInfo">About</a></li>
+			<li><a href="#aboutInfo">Experience</a></li>
 			<li><a href="#projectTitle">Projects</a></li>
-			<li><a href="./docs/ACWDResume.pdf" target="_blank">Resume</a></li>
+			<li><a href="#">Contact</a></li>
 		</ul>
 	</header>
-	<section class="circle graphic">
-		<div id= "graphic">
-			<div class= "circle one noShow">&nbsp</div>
-			<div class= "circle two noShow">&nbsp</div>
-			<div class= "circle three noShow">&nbsp</div>
-			<div class= "circle four noShow">&nbsp</div>
-			<div class= "circle five noShow">&nbsp</div>
-			<div class= "circle six noShow"><img src= "img/Braid Silhouettes-01.png" id= "graphic-photo" />&nbsp</div>
-		</div>
-		
-		<div id="quote">
-			<p>"I'm a woman, Phenomenally <br> Phenomenal Women <br> That's Me." <i>- Maya Angelou</i></p>
-		</div>
-	</section>
-
-	<section role="presentation">
-		<div class='about-info' id="aboutInfo">
-			<h2>About</h2>
-			<p>Welcome! I am a newly self-taught front-end developer looking to add my coding and design skills to your projects.
-			Though I am new to coding I have 5+ years of work experience. I have excellent communication, time management,
-			and customer service skills. You won't find anyone that is more dependable, hard-working and driven to providing exceptional work in everything
-			that I do.</p>
-			<p>Please take a look around at recent projects that I have worked or working on and thank you for taking the time to visit my site!</p>
-		</div>
-		<div class= 'photo'>	
-			<img src="img/headshot.jpg">
-		</div>
-	</section>
-	
-	<section role="presentation">
-		<h2 id='projectTitle'>Projects</h2>
-		<div id='project'>
-			
-
-		</div>
-	</section>
-	
+	<div class="border-style" role="presentation"></div>
+	<main>
+		<section id="graphic" role="presentation">
+				<div class= "circle one"><p>I'm a woman,</p></div>
+				<div class= "circle two"><p>Phenomenally</p></div>
+				<div class= "circle three"><p>Phenomenal<br/> Women</p></div>
+				<div class= "circle four"><p>That's Me. <br/> <i>- Maya Angelou</i></p></div>
+				<div class= "circle five"><img src= "img/Braid Silhouettes-01.png" id= "graphic-photo" />&nbsp</div>
+		</section>
+	<div class="border-style" role="presentation"></div>
+		<section class="about-info" id="aboutInfo" role="presentation">
+			<h2>Experience and Skills</h2>
+			<div class="objective">
+				<!--<img src="img/headshot.jpg" alt="Picture of Aisha" class="photo">-->
+				<h3>Objective</h3>
+				<p>Welcome! I am a newly self-taught front-end developer looking to add my coding and design skills to your projects.
+				Though I am new to coding I have 5+ years of work experience. I have excellent communication, time management,
+				and customer service skills. You won't find anyone that is more dependable, hard-working and driven to providing exceptional work in everything
+				that I do.</p>
+			</div>
+			<div class="skill">
+				<h3>Skills/Languages</h3>
+				<ul>
+					<li class="skills"><i class="fa-brands fa-html5 fa-2x"></i> HTML</li>
+					<li class="skills"><i class="fa-brands fa-css3-alt fa-2x"></i> CSS</li>
+					<li class="skills"><i class="fa-brands fa-js fa-2x"></i> JavaScript</li>
+					<li class="skills"><i class="fa-brands fa-git-alt fa-2x"></i> Git</li>
+					<li class="skills"><i class="fa-brands fa-github fa-2x"></i> GitHub</li>
+					<li class="skills"><i class="fa-brands fa-node-js fa-2x"></i> Node.js</li>
+					<li class="skills"><i class="fa-brands fa-react fa-2x"></i> React</li>
+					<li class="skills"><i class="fa-solid fa-server fa-2x"></i> SQL</li>
+					<li class="skills"><i class="fa-solid fa-database fa-2x"></i> Database</li>
+					<li class="skills"><i class="fa-solid fa-file-shield fa-2x"></i>Data Security</li>
+				</ul>
+			</div>
+			<div class="experience">
+				<h3>Work Experience</h3>
+			</div>		
+		</section>
+	<div class="border-style" role="presentation"></div>
+		<section role="presentation" class="project-section">
+			<h2 id='projectTitle'>Projects</h2>
+			<div id='project'>
+				
+			</div>
+		</section> 
+	</main>
+	<div class="border-style" role="presentation"></div>
 	<footer class='footer'>
-		<h3>Contact Info</h3>
-		<p>Email: coles_aisha@yahoo.com</p>
+		<h2>Contact Info</h2>
+		<ul>
+			<li class="contact-list"><i class="fa-solid fa-envelope fa-2x"></i>coles_aisha@yahoo.com</li>
+			<li class="contact-list"><i class="fa-brands fa-linked fa-2x"></i>http://linkedin.com/aishacoles13</li>
+			<li class="contact-list"><i class="fa-brands fa-github fa-2x"></i>http://</li>
+		</ul>
+		
 	</footer>
 
 	<script src="js/app.js"></script>

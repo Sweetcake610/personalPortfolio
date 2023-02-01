@@ -1,6 +1,6 @@
 // JavaScript File. Adding animation to main page and adding project section
 
-let circles = document.querySelectorAll('.circle');
+let circles = document.getElementsByClassName('.circle');
 let graphic = document.getElementById('graphic');
 let circlesArray = [...circles];
 
@@ -33,9 +33,9 @@ class Project {
 	get projectInfo () {
 		let projectDiv = document.createElement('div');
 		projectDiv.setAttribute('class', 'project-info');
-		projectDiv.innerHTML = '<h3>Project Title: ' + this._title + '</h3>' +
-								'<p>Description: ' + this._description + '<br>Year Completed: ' +
-								this._year + '<br>Source: ' + this._source + '</p>';
+		projectDiv.innerHTML = '<h4>' + this._title + '</h4>' +
+								'<p><strong>Description:</strong> ' + this._description + '<br><strong>Year Completed:</strong> ' +
+								this._year + '<br><strong>Source:</strong> ' + this._source + '</p>';
 		projectSection.appendChild(projectDiv);
 	}
 	
