@@ -1,45 +1,109 @@
 // JavaScript File. Adding animation to graphic display on website
-	let circleOne = document.querySelector('.one');
-	let circleTwo = document.querySelector('.two');
-	let circleThree = document.querySelector('.three');
-	let circleFour = document.querySelector('.four');
-	let circleFive = document.querySelector('.five');
+let graphic = document.getElementById('graphic');
 
-	const animateCircles = function() {
-		
-		setTimeout(function () {
+let circleOne = document.querySelector('.one');
+let circleTwo = document.querySelector('.two');
+let circleThree = document.querySelector('.three');
+let circleFour = document.querySelector('.four');
+let circleFive = document.querySelector('.five');
+let circles = document.querySelectorAll('.circle');
+
+
+//async function makeVisible() {
+	const circleAnimation = setInterval(function makeVisible() {
+		setTimeout(() => {
 			circleOne.classList.add('hidden');
 			circleTwo.classList.remove('hidden');
-		}, 2000);
-		setTimeout(function () {
-			circleTwo.classList.add('hidden');
-			circleThree.classList.remove('hidden');
-		}, 2500);
-		setTimeout(function () {
-			circleThree.classList.add('hidden');
-			circleFour.classList.remove('hidden');
-		}, 3000);
-		setTimeout(function () {
-			circleFour.classList.add('hidden');
-			circleFive.classList.remove('hidden');
-		}, 3500);
-		setTimeout(function () {
-			circleOne.classList.remove('hidden');
-			circleTwo.classList.remove('hidden');
-			circleThree.classList.remove('hidden');
-			circleFour.classList.remove('hidden');
-		}, 4000);
-		setTimeout(function () {
-			circleTwo.classList.add('hidden');
-			circleThree.classList.add('hidden');
-			circleFour.classList.add('hidden');
-			circleFive.classList.add('hidden');
-			circleOne.classList.remove('hidden');
-		}, 5000);
-	}
+			setTimeout(() => {
+				circleTwo.classList.add('hidden');
+				circleThree.classList.remove('hidden');
+				setTimeout(() => {
+					circleThree.classList.add('hidden');
+					circleFour.classList.remove('hidden');
+					setTimeout(() => {
+						circleFour.classList.add('hidden');
+						circleFive.classList.toggle('hidden');
+						setTimeout(() => {
+							circleOne.classList.remove('hidden');
+							circleTwo.classList.add('hidden');
+							circleThree.classList.add('hidden');
+							circleFour.classList.add('hidden');
+							circleFive.classList.add('hidden');
+						}, 2000)
+					}, 1000) 
+				}, 1000)
+			}, 1000)
+		}, 1000)
+	}, 6000);
+//};
+// async function makeInvisible () {
+// 		await makeVisible();
+// 		for(let i = 1; i < circles.length; i++) {
+// 			circles[i].classList.add('hidden');
+// 		}
+// 	};
+// 	makeInvisible();
+	//const myCircleInterval = setInterval(makeInvisible, 0);
+
+	// const toggleVisibility = function() {
+	// 	setInterval(() => {
+	// 		makeVisibleAndInvisible(circleOne);
+	// 		makeVisibleAndInvisible(circleTwo);
+	// 		setTimeout(makeVisibleAndInvisible, 5000);
+	// 	}, 2000)
+	// }
+	// toggleVisibility();
+	//makeVisible(circleOne)
+	//makeVisible(circleTwo);
+	//makeVisible(circleThree);
+
+	// const circleAnimation = function() {
+	// 	setInterval(() => {
+	// 	circleOne.classList.toggle('hidden');
+	// 	}, 2000)
+	// 	setInterval(() => {
+	// 		circleTwo.classList.toggle('hidden');
+	// 	}, 4000)
+	// }
+		
+	// circleAnimation();
+	//setInterval(circleAnimation, 3000);
+
+// 	const animateCircles = function() {
+		
+// 		setTimeout(function () {
+// 			circleOne.classList.add('hidden');
+// 			circleTwo.classList.remove('hidden');
+// 		}, 2000);
+// 		setTimeout(function () {
+// 			circleTwo.classList.add('hidden');
+// 			circleThree.classList.remove('hidden');
+// 		}, 2500);
+// 		setTimeout(function () {
+// 			circleThree.classList.add('hidden');
+// 			circleFour.classList.remove('hidden');
+// 		}, 3000);
+// 		setTimeout(function () {
+// 			circleFour.classList.add('hidden');
+// 			circleFive.classList.remove('hidden');
+// 		}, 3500);
+// 		setTimeout(function () {
+// 			circleOne.classList.remove('hidden');
+// 			circleTwo.classList.remove('hidden');
+// 			circleThree.classList.remove('hidden');
+// 			circleFour.classList.remove('hidden');
+// 		}, 4000);
+// 		setTimeout(function () {
+// 			circleTwo.classList.add('hidden');
+// 			circleThree.classList.add('hidden');
+// 			circleFour.classList.add('hidden');
+// 			circleFive.classList.add('hidden');
+// 			circleOne.classList.remove('hidden');
+// 		}, 5000);
+// 	}
 
 
-setInterval(animateCircles, 7000);
+// setInterval(animateCircles, 7000);
 
 //Adding projects to project section 
 const projectSection = document.getElementById('project');
