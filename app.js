@@ -54,7 +54,7 @@ class Project {
 		projectDiv.innerHTML = '<h4>' + this._title + '</h4>' +
 								'<p><strong>Description:</strong> ' + this._description + '</p>' +
 								'<p><strong>Year Completed:</strong> ' + this._year + '</p>' +
-								'<p><strong>Source:</strong> ' + this._source + '</p>';
+								'<p><strong>Source: </strong><a href=' + this._source + ' target= _blank>' + this._title + '</a></p>';
 		personalProjectSection.appendChild(projectDiv);
 	}
 
@@ -64,19 +64,20 @@ class Project {
 		projectDiv.innerHTML = '<h4>' + this._title + '</h4>' +
 								'<p><strong>Description:</strong> ' + this._description + '</p>' +
 								'<p><strong>Year Completed:</strong> ' + this._year + '</p>' +
-								'<p><strong>Source:</strong> ' + this._source + '</p>';
+								'<p><strong>Source: </strong><a href=' + this._source + ' target= _blank>' + this._title + '</a></p>';
 		codecademyProjectSection.appendChild(projectDiv);
 	}
 	
 }
 
-let projectOne = new Project('Personal Website', 'Codecademy Portfolio Project: Create personal website', '2023', 'This is it.');
-let projectTwo = new Project('Easyl', 'Art Informational Website designed by graphic designer: Bianca', '2023', 'In Progress'); 
+let projectOne = new Project('Personal Website', 'Codecademy Portfolio Project: Create personal website', '2023', '#');
+let projectTwo = new Project('Easyl', 'Art Informational Website designed by graphic designer: Bianca', '2023'); 
 let projectThree = new Project("Tea Cozy Project", "Off-Platform project part of the Layout with Flexbox lesson", "2022", 'https://github.com/Sweetcake610/teaCozyProject');
 
 // Personal project section 
 projectOne.personalProjectInfo;
 projectTwo.personalProjectInfo;
+
 
 //Codecadmey project section
 projectThree.codecademyProjectInfo;
