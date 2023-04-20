@@ -188,6 +188,17 @@ h3 {
 	overflow-wrap: break-word;
 }
 
+.project-info a:link {
+	color: blue;
+}
+.project-info a:visited {
+	color: #000;
+}
+
+.project-info a:active {
+	color:#fff;
+}
+
 
 /*****************Styling Footer Section**************/
 .footer {
