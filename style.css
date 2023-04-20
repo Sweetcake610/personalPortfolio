@@ -76,6 +76,9 @@ li a:active {
     color: #fff;
     text-align: center;
 }
+.circle p {
+	margin: 0 auto;
+}
 .one {
 	margin-left: 15px;
 }
@@ -114,7 +117,11 @@ li a:active {
 	margin: 10px 0 5px 0;
 }
 .about-info p {
-	font-size: 1.625rem;
+	font-size: 1.525rem;
+	margin: 10px 0;
+}
+.about-info li {
+	font-size: 1.525rem;
 	margin: 10px 0;
 }
 .skills {
@@ -146,7 +153,8 @@ h3 {
 	height: auto;
 	margin-bottom: 25px;
 }
-#project {
+#personalProject,
+#codecademyProject {
 	width: 80%;
 	height: auto;
 	display: flex;
@@ -172,10 +180,12 @@ h3 {
 }
 .project-info h4{
 	font-size: 1.3rem;
+	margin: 5px auto;
 }
 
-.project-info h4, p {
+.project-info p {
 	margin: 5px auto;
+	overflow-wrap: break-word;
 }
 
 
@@ -184,7 +194,7 @@ h3 {
 	width: 100%;
 	margin: 0 auto;
 	padding: 10px;
-	height: auto;
+	height: 120px;
 }
 .footer h2 {
 	font-size: 2.25rem;
@@ -198,8 +208,16 @@ h3 {
 	list-style-type: none;
 	font-size: 1.6rem;
 	display: inline-block;
-    margin: 10px;
 }
 .contact-list a {
-	padding: 15px 18px;
+	padding-bottom: 10px;
+}
+
+.contact-list a:hover {
+	background-color:  rgb(240, 77, 152);
+	color: #fff;
+}
+.contact-list a:active {
+	background-color: #000;
+	color:#fff;
 }
