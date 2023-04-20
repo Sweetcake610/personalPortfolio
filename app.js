@@ -71,8 +71,9 @@ class Project {
 }
 
 let projectOne = new Project('Personal Website', 'Codecademy Portfolio Project: Create personal website', '2023', '#');
-let projectTwo = new Project('Easyl', 'Art Informational Website designed by graphic designer: Bianca', '2023'); 
+let projectTwo = new Project('Easyl', 'Art Informational Website designed by graphic designer: Bianca', '2023', '#'); 
 let projectThree = new Project("Tea Cozy Project", "Off-Platform project part of the Layout with Flexbox lesson", "2022", 'https://github.com/Sweetcake610/teaCozyProject');
+let projectFour = new Project('Appointment Planner', 'Codecademy Challenge Project using React', '2023', 'https://github.com/Sweetcake610/AppointmentPlanner');
 
 // Personal project section 
 projectOne.personalProjectInfo;
@@ -81,3 +82,4 @@ projectTwo.personalProjectInfo;
 
 //Codecadmey project section
 projectThree.codecademyProjectInfo;
+projectFour.codecademyProjectInfo;
