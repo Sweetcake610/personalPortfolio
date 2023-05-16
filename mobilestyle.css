@@ -47,14 +47,16 @@
     }
     .about-info h3 {
         font-size: 1.4rem;
-        text-decoration: underline;
-        margin: 10px auto;
         text-align: center;
     }
-    .skills {
+    .about-info li {
+        font-size: 0.8rem;
+        margin: 10px auto;
+    }
+    /* .skills {
         font-size: 0.7rem;
         margin: 5px;
-    }
+    } */
     .fa-2x {
         font-size: 1.8rem;
     }
@@ -67,6 +69,10 @@
     #projectTitle {
         font-size: 1.6rem;
         margin: 20px 0 5px 0;
+        text-align: center;
+    }
+    .titleP {
+        font-size: 1.4rem;
         text-align: center;
     }
     #personalProject,
