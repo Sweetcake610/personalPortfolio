@@ -71,8 +71,8 @@ class Project {
 }
 
 let projectOne = new Project('Personal Website', 'Codecademy Portfolio Project: Create personal website', '2023', '#');
-let projectTwo = new Project('Easyl', 'Art Informational Website designed by graphic designer: Bianca', '2023', '#'); 
-let projectThree = new Project("Tea Cozy Project", "Off-Platform project part of the Layout with Flexbox lesson", "2022", 'https://github.com/Sweetcake610/teaCozyProject');
+let projectTwo = new Project('Easyl', 'Art Informational Website designed by graphic designer: Bianca', 'In Progress', '#'); 
+let projectThree = new Project("CheatSheet", "Informational CheatSheet on syntax for HTML, CSS, and JS", "2023", 'https://github.com/Sweetcake610/cheatSheet');
 let projectFour = new Project('Appointment Planner', 'Codecademy Challenge Project using React', '2023', 'https://github.com/Sweetcake610/AppointmentPlanner');
 
 // Personal project section 
