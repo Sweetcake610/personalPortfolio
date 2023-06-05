@@ -81,6 +81,7 @@ let projectOne = new Project('Personal Website', 'Codecademy Portfolio Project: 
 let projectTwo = new Project('Easyl', 'Art Informational Website designed by graphic designer: Bianca', 'In Progress', '#'); 
 let projectThree = new Project("CheatSheet", "Informational CheatSheet on syntax for HTML, CSS, and JS", "2023", 'https://github.com/Sweetcake610/cheatSheet');
 let projectFour = new Project('Appointment Planner', 'Codecademy Challenge Project using React', '2023', 'https://github.com/Sweetcake610/AppointmentPlanner');
+let projectFive = new Project('Tea Cozy', 'Single page project for a Tea Shop', '2022/23', 'https://github.com/Sweetcake610/teaCozyProject');
 
 // Personal project section 
 projectOne.personalProjectInfo;
@@ -89,4 +90,5 @@ projectTwo.personalProjectInfo;
 
 //Codecadmey project section
 projectThree.codecademyProjectInfo;
+projectFive.codecademyProjectInfo;
 projectFour.codecademyProjectInfo;
