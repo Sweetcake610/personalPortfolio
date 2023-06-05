@@ -145,6 +145,42 @@ h3 {
 	width: 75%;
 	height: 75%;
 }*/
+fieldset {
+	width: 100%;
+	border-color: rgb(232 127 176);
+	margin: 20px auto;
+    padding: 20px 20px;
+}
+legend {
+	font-weight: bold;
+	font-size: 1.3rem;
+}
+label {
+	font-size: 1.1rem;
+}
+input {
+	width: 95%;
+	padding: 10px;
+	margin: 10px auto;
+
+}
+input:focus {
+	background-color: rgb(232 127 176);
+	opacity: 0.3;
+}
+input[type=textarea] {
+	height: 200px;
+}
+input[type=submit] {
+	background-color: rgb(232 127 176);
+	color:#fff;
+	font-size: 1.5rem;
+	width: 98%;
+	height: 55px;
+	border: none;
+	border-radius: 10px
+	
+}
 /*****************Styling Project Section**************/
 .project-section {
 	width: 100%;
