@@ -7,7 +7,6 @@ let circleThree = document.querySelector('.three');
 let circleFour = document.querySelector('.four');
 let circleFive = document.querySelector('.five');
 
-
 function circlesOnDisplay(circle) {
 	circle.classList.remove('hidden');
 }
