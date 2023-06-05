@@ -6,29 +6,35 @@ let circleTwo = document.querySelector('.two');
 let circleThree = document.querySelector('.three');
 let circleFour = document.querySelector('.four');
 let circleFive = document.querySelector('.five');
-let circles = document.querySelectorAll('.circle');
 
+//Functions that allow circle elements to display and to be hidden at a set time interval.
+function circlesOnDisplay(circle) {
+	circle.classList.remove('hidden');
+}
 
-//animate cirlces to toggle visible and invisible one at a time using setInterval and setTimeout.
+function circlesOffDisplay(circle) {
+	circle.classList.add('hidden');
+}
+	
 const circleAnimation = setInterval(function makeVisible() {
 	setTimeout(() => {
-		circleOne.classList.add('hidden');
-		circleTwo.classList.remove('hidden');
+		circlesOffDisplay(circleOne);
+		circlesOnDisplay(circleTwo);
 		setTimeout(() => {
-			circleTwo.classList.add('hidden');
-			circleThree.classList.remove('hidden');
+			circlesOffDisplay(circleTwo);
+			circlesOnDisplay(circleThree);
 			setTimeout(() => {
-				circleThree.classList.add('hidden');
-				circleFour.classList.remove('hidden');
+				circlesOffDisplay(circleThree);
+				circlesOnDisplay(circleFour);
 				setTimeout(() => {
-					circleFour.classList.add('hidden');
-					circleFive.classList.toggle('hidden');
+					circlesOffDisplay(circleFour);
+					circlesOnDisplay(circleFive);
 					setTimeout(() => {
-						circleOne.classList.remove('hidden');
-						circleTwo.classList.add('hidden');
-						circleThree.classList.add('hidden');
-						circleFour.classList.add('hidden');
-						circleFive.classList.add('hidden');
+						circlesOnDisplay(circleOne);
+						circlesOffDisplay(circleTwo);
+						circlesOffDisplay(circleThree); 
+						circlesOffDisplay(circleFour); 
+						circlesOffDisplay(circleFive); 
 					}, 2000)
 				}, 1000) 
 			}, 1000)
