@@ -8,19 +8,30 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="mobilestyle.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/5af55e7126.js" crossorigin="anonymous" async></script>
 </head>
 
 <body>
-	<header>
-		<h1 class="name">Aisha Coles <br> Full Stack Software Engineer</h1>
-		<ul class="nav">
-			<li><a href="#aboutInfo">Experience</a></li>
-			<li><a href="#projectTitle">Projects</a></li>
-			<li><a href="#">Contact</a></li>
-		</ul>
-	</header>
-	<div class="border-style" role="presentation"></div>
+	<div id="designDiv">
+		<div id="squareDesign" role="presentation">
+			<div id="bigCircle"><img src= "img/Braid Silhouettes-01.png" id= "graphic-photo" /></div>
+			<div class="purple circle"><button class="navButton purple">Featured Projects</button></div>
+			<div class="latte circle"><button class="navButton latte">Experience & Skills</button></div>
+			<div class="pink circle"><button class="navButton pink">Education</button></div>
+			<div class="purple circle"><button class="navButton purple">All Projects</button></div>
+			<div class="latte circle"><button class="navButton latte">Contact Info</button></div>
+			<div class="pink circle"><button class="navButton pink">About Aisha</button></div>
+		</div>
+	</div>
+	
+	<div id="contentDiv">
+		<header id="mainHeader">
+			<h1 id="name">Aisha Coles</h1>
+			<h1 id="jobTitle">Full Stack Software Engineer</h1>
+		</header>
+	</div>
+	<!-- <div class="border-style" role="presentation"></div>
 	<main>
 		<section id="graphic" role="presentation">
 				<div class= "circle one "><p>I'm a woman,</p></div>
@@ -28,12 +39,12 @@
 				<div class= "circle three hidden"><p>Phenomenal<br/> Woman</p></div>
 				<div class= "circle four hidden"><p>That's Me. <br/> <i>- Maya Angelou</i></p></div>
 				<div class= "circle five hidden"><img src= "img/Braid Silhouettes-01.png" id= "graphic-photo" />&nbsp</div>
-		</section>
-	<div class="border-style" role="presentation"></div>
+		</section> -->
+	<!-- <div class="border-style" role="presentation"></div>
 		<section class="about-info" id="aboutInfo" role="presentation">
 			<h2>Experience and Skills</h2>
 			<div class="objective">
-				<!--<img src="img/headshot.jpg" alt="Picture of Aisha" class="photo">-->
+				<img src="img/headshot.jpg" alt="Picture of Aisha" class="photo">
 				<h3>Objective</h3>
 				<p>I am an Entry-Level Full Stack Software Engineer with an aptitude for designing creative and clean web applications. 
 					Equipped with 7+ years of work experience as an Office Administrator, I strategically implemented efficient solutions 
@@ -61,24 +72,7 @@
 					<li class="skills"><i class="fa-solid fa-file-shield fa-2x"></i> Data Security</li>
 				</ul>
 			</div>
-			<!-- <div class="experience">
-				<h3>Work Experience</h3>
-				<form method="POST" name="emailForm" action="form-to-email.php">
-					<fieldset>
-						<legend>Request Resume</legend>
-						<label for="name">Name:</label>
-						<input type="text" id="name" size="30" required>
-						<label for="coName">Company Name:</label>
-						<input type="text" id="coName" size="30">
-						<label for="email">Email</label>
-						<input type="email" id="email" pattern=".+@globex\.com" size="30" required>
-						<label for="addNotes">Reason for Resume Request:</label>
-						<input type="textarea" id="name" required>
-						<input type="submit" value="Submit">
-					</fieldset>
-				</form>
-				 <p><a href="#" target="_blank">Click Here for full Resume</a></p> 
-			</div> -->
+			
 		</section>
 	<div class="border-style" role="presentation"></div>
 		<section role="presentation" class="project-section">
@@ -102,7 +96,7 @@
 			<li class="contact-list"><a href="https://github.com/Sweetcake610"><i class="fa-brands fa-github fa-2x"></i></a></li>
 		</ul>
 		
-	</footer>
+	</footer> -->
 
 	<script src="app.js"></script>
 </body>

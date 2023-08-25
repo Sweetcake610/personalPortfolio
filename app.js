@@ -1,3 +1,21 @@
+let mainHeader = document.getElementById('mainHeader');
+
+const headerDesign = function () {
+	let bgCircle = document.createElement('div');
+	bgCircle.classList.add('circle');
+	mainHeader.appendChild(bgCircle);
+}
+
+
+
+
+
+
+
+
+
+
+
 // JavaScript File. Adding animation to graphic display on website
 let graphic = document.getElementById('graphic');
 
