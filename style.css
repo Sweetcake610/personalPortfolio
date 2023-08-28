@@ -7,7 +7,7 @@
 	src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2) format('woff2');
 	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   }
-/*Main Div section styling*/
+/*******Body and Main outer Div Section Styling***********/
 
 body {
 	background-color: #F9F5E3;
@@ -16,28 +16,24 @@ body {
 	display: inline-flex;
     width: 100%;
 	height: auto;
-
 }
-#designDiv {
-	margin: 0 auto;
-	width: 40%;
+#navSideBarDiv {
+	width: 30%;
+	height: auto;
 }
 #contentDiv {
-	margin: 0 auto;
-	width: 60%;
+	width: 70%;
+	height: auto;
 }
-/* .border-style {
-	width: 100%;
-	height: 30px;
-	border-top: 5px solid rgb(240, 77, 152);
-	border-bottom: 5px solid rgb(240, 77, 152);
-} */
+.noShow {
+	display: none;
+}
 
-/***********Page Design and navigation Styling***************/
+/***********Navigation Side Bar Styling***************/
 #squareDesign {
 	background-color: #002500;
 	width: 180px;
-	height: 1800px;
+	height: 1600px;
 	margin-left: 120px;
 	margin-top: -80px;
     padding: 10px 5px;
@@ -78,8 +74,16 @@ body {
 	background-color: #F9F5E3;
 	color:#450C27;
 }
+.navButton {
+	border: none;
+    font-size: 1.4rem;
+    padding: 40px 5px;
+    border-radius: 50%;
+  }
+
+
 .bounce-in {
-	animation: bounce-in 2s ease infinite;
+	animation: bounce-in 2s ease;
   }
   @keyframes bounce-in {
 	0% {
@@ -93,125 +97,96 @@ body {
 	70% { transform: scale(.9); }
 	100% { transform: scale(1); }
   }
-/*Header Styling*/
+.spread-out{
+	animation: spread-out 2s ease;
+  }
+  @keyframes spread-out {
+	0% {
+		opacity: 0;
+		transform: scale(.3);
+	  }
+	  100% { transform: scale(5); }
+  }
+  
+/***********Header, with name and job title, Styling*************/
  header{
-	width: 100%;
     height: auto;
 	margin-top: 80px;
-	
+	text-align: center;
+	font-weight: 700;
+	line-height: 3em;
 } 
 #name {
-	width: 100%;
-	margin: 10px auto;
-    line-height: 1em;
-    font-size: 2.9rem;
-    font-weight: 700;
-    text-align: center;
-    padding: 10px 0;
+    font-size: 2.9rem; 
 }
 #jobTitle {
-	width: 100%;
-	margin: 0 auto;
-	margin-top: -25px;
-    line-height: 1em;
-    font-size: 2.6rem;
-    font-weight: 700;
-    text-align: center;
-    padding: 10px 0;
-    
-}
-.nav {
-	width: 100%;
-    font-size: 2rem;
-    display: inline-flex;
-    list-style-type: none;
-    justify-content: center;
-	margin: 10px auto;
+	margin-top: -30px;
+    font-size: 2.6rem; 
 }
 
-li a {
-	padding: 30px 18px;
-	margin: auto 0;
-	text-decoration: none;
-}
-
-li a:link, li a:visited {
-	color: #000;
-	text-decoration: none;
-}
-li a:hover {
-	background-color:  rgb(240, 77, 152);
-	color: #fff;
-}
-li a:active {
-	background-color: #000;
-	color:#fff;
-}
-
-/**************Circle Graphic Section****************/
-#graphic {
-	width: 100%;
-    height: 370px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-/* .circle {
-	background-color: rgb(240, 77, 152);
-    opacity: 0.9;
-	width: 300px;
-	height: 300px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    font-size: 1.8rem;
-    color: #fff;
-    text-align: center;
-} */
-.circle p {
-	margin: 0 auto;
-}
-.one {
-	margin-left: 15px;
-}
-.two {
-	margin-left: -25px;
-}
-.three {
-	margin-left: -25px;
-}
-.four {
-	margin-left: -25px;
-}
-.five {
-	margin-left: -25px;
-}
-.hidden{
-	visibility: hidden;
-} 
-
-/**************Styling About Section****************/
-.about-info {
-	width: 100%;
-	margin: 0 auto;
+/**************Styling for contentDiv outer container and inner text Section****************/
+.contentInfo {
 	padding: 10px;
 	height: auto;
 }
-.objective, .skill, .experience, .certification {
-	width: 80%;
+.center {
+	text-align: center;
+}
+.contentInfo h2 {
+	font-size: 2.0rem;
+	margin: 20px 0 5px 0;
+	text-align: center;
+}
+.infoDiv {
+	width: 90%;
 	margin: 0 auto;
 }
-.about-info h2 {
-	font-size: 2.25rem;
-	margin: 10px 0 5px 0;
+.infoDiv h3 {
+	font-size: 1.5rem;
+	text-decoration: underline;
 }
-.about-info p {
-	font-size: 1.525rem;
+.infoDiv h4 {
+	font-size: 1.2rem;
+	font-style: italic;
+	margin: 10px auto 10px;
+}
+.infoDiv p {
+	font-size: 1.1rem;
 	margin: 10px 0;
 }
-.about-info li {
-	font-size: 1.525rem;
+.infoDiv li {
+	font-size: 1.3rem;
 	margin: 10px 0;
+}
+/******Specific elements that need additional styling in Main Content section*****/
+#about, #featured, #contact {
+	height: 300px;
+
+}
+.photo {
+	float: left;
+    height: auto;
+    width: 30%;
+    margin: -45px 20px 10px;
+}
+.photo img {
+	width: 75%;
+	height: 75%;
+}
+#featured {
+	height: auto;
+	margin: 5px 10px;
+}
+#contact {
+	width: 50%;
+	height: 110px;
+	margin-left: 145px;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+}
+#contact h4 {
+	padding: 5px;
 }
 .skills {
 	list-style-type: none;
@@ -220,144 +195,66 @@ li a:active {
     margin: 5px 10px;
     padding: 10px;
 }
-h3 {
-	font-size: 1.8rem;
-	text-decoration: underline;
-}
-/*.photo {
-	float: right;
-    height: 80%;
-    width: 25%;
-    margin: -40px 15px 10px 35px;
-}
-.photo img {
-	width: 75%;
-	height: 75%;
-}*/
-fieldset {
-	width: 100%;
-	border-color: rgb(232 127 176);
-	margin: 20px auto;
-    padding: 20px 20px;
-}
-legend {
-	font-weight: bold;
-	font-size: 1.3rem;
-}
-label {
-	font-size: 1.1rem;
-}
-input {
-	width: 95%;
-	padding: 10px;
-	margin: 10px auto;
+/*****************Styling Contact Info on Home Page Section**************/
 
+ul .contact-list {
+	list-style-type: none;
+	display: inline-block;
+	font-size: 1.4rem;
+    margin: 10px;
+    padding: 10px;
 }
-input:focus {
-	background-color: rgb(232 127 176);
-	opacity: 0.3;
+.contact-list:hover {
+	background-color:  #002500;
 }
-input[type=textarea] {
-	height: 200px;
+a:hover {
+	color:#F9F5E3;
 }
-input[type=submit] {
-	background-color: rgb(232 127 176);
-	color:#fff;
-	font-size: 1.5rem;
-	width: 98%;
-	height: 55px;
-	border: none;
-	border-radius: 10px
-	
-}
+
 /*****************Styling Project Section**************/
-.project-section {
-	width: 100%;
-	margin: 0 auto;
-	padding: 10px;
-	height: auto;
-	margin-bottom: 25px;
-}
-#personalProject,
-#codecademyProject {
-	width: 80%;
+#projectsAll {
 	height: auto;
 	display: flex;
 	text-align: center;
-	margin: 0 auto;
-}
-#projectTitle {
-	font-size: 36px;
-}
-.titleP {
-	width: 80%;
-	margin: 15px auto 25px;
-}
-.project-info {
-	width: 250px;
-    height: auto;
-	margin: 0 15px;
-    padding: 5px 15px;
-    border: 4px solid rgb(232 127 176);
-    box-shadow: 5px 5px rgb(232 127 176);
-    border-radius: 10px;
-}
-.project-info:hover {
-	background-color: rgb(232 127 176);
-    color: white;
-    box-shadow: 0 0;
-}
-.project-info h4{
-	font-size: 1.3rem;
-	margin: 5px auto;
+	flex-wrap: wrap;
+    justify-content: center;
 }
 
-.project-info p {
-	margin: 5px auto;
+.projectInfo {
+	width: 275px;
+    height: auto;
+	margin: 15px;
+    padding: 5px 15px;
+    border: 4px solid #002500;
+    box-shadow: 5px 5px #002500;
+    border-radius: 10px;
+}
+.projectInfo h4{
+	font-size: 1.2rem;
+	margin: 10px auto 10px;
+}
+
+.projectInfo p {
+	font-size: 0.9rem;
+	margin: 10px 0;
 	overflow-wrap: break-word;
 }
 
-.project-info a:link {
-	color: blue;
+.projectInfo a:link {
+	color: #002500;
 }
-.project-info a:visited {
-	color: #000;
+.projectInfo a:hover {
+	color: #E87FB0;
 }
 
-.project-info a:active {
+.projectInfo a:active {
 	color:#fff;
 }
-
-
-/*****************Styling Footer Section**************/
-.footer {
-	width: 100%;
-	margin: 0 auto;
-	padding: 10px;
-	height: 120px;
-}
-.footer h2 {
-	font-size: 2.25rem;
-}
-.footer ul {
+.projectImage {
 	width: 80%;
-	margin: 0 auto;
-	text-align: center;
-}
-.contact-list {
-	list-style-type: none;
-	font-size: 1.6rem;
-	display: inline-block;
-}
-.contact-list a {
-	padding-bottom: 10px;
+	height: auto;
+	border: 2px solid #450C27;
+	border-radius: 10px;
 }
 
-.contact-list a:hover {
-	background-color:  rgb(240, 77, 152);
-	color: #fff;
-}
-.contact-list a:active {
-	background-color: #000;
-	color:#fff;
-}
+

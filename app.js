@@ -1,112 +1,108 @@
-let mainHeader = document.getElementById('mainHeader');
+let navCircles = document.getElementsByClassName('circle');
+let navCirclesArray = Array.from(navCircles);
+let contentDiv = document.getElementById('contentDiv');
 
-const headerDesign = function () {
-	let bgCircle = document.createElement('div');
-	bgCircle.classList.add('circle');
-	mainHeader.appendChild(bgCircle);
-}
-
-
-
-
-
-
-
-
-
-
-
-// JavaScript File. Adding animation to graphic display on website
-let graphic = document.getElementById('graphic');
-
-let circleOne = document.querySelector('.one');
-let circleTwo = document.querySelector('.two');
-let circleThree = document.querySelector('.three');
-let circleFour = document.querySelector('.four');
-let circleFive = document.querySelector('.five');
-
-function circlesOnDisplay(circle) {
-	circle.classList.remove('hidden');
-}
-
-function circlesOffDisplay(circle) {
-	circle.classList.add('hidden');
-}
-	
-
-//animate cirlces to toggle visible and invisible one at a time using setInterval and setTimeout.
-const circleAnimation = setInterval(function makeVisible() {
-	setTimeout(() => {
-		circlesOffDisplay(circleOne);
-		circlesOnDisplay(circleTwo);
+navCirclesArray.forEach((navCircle, index) => {
+	navCircle.addEventListener('click', function() {
+		navCircle.classList.add('bounce-in');
+		circleTransition();
+		console.log('Button is clicked');
+		let navIndex = navCirclesArray[index].innerText;
+		console.log(navIndex);
+		contextVisible(navIndex);
 		setTimeout(() => {
-			circlesOffDisplay(circleTwo);
-			circlesOnDisplay(circleThree);
-			setTimeout(() => {
-				circlesOffDisplay(circleThree);
-				circlesOnDisplay(circleFour);
-				setTimeout(() => {
-					circlesOffDisplay(circleFour);
-					circlesOnDisplay(circleFive);
-					setTimeout(() => {
-						circlesOnDisplay(circleOne);
-						circlesOffDisplay(circleTwo);
-						circlesOffDisplay(circleThree); 
-						circlesOffDisplay(circleFour); 
-						circlesOffDisplay(circleFive); 
-					}, 2000)
-				}, 1000) 
-			}, 1000)
-		}, 1000)
-	}, 1000)
-}, 6000);
+			navCircle.classList.remove('bounce-in');
+		}, 3000)
+	})
+});
 
+const circleTransition = function() {
+	let contentCircle = document.createElement('div');
+	let coverCircle = document.createElement('div')
+	contentCircle.classList.add('circle', 'purple', 'spread-out');
+	coverCircle.classList.add('circle', 'latte', 'spread-out')
+	contentDiv.appendChild(contentCircle);
+		// contentCircle.appendChild(coverCircle)
+
+}
+
+const contextVisible = function(indexText) {
+ 	switch(indexText !== undefined) {
+		case 'Home Page': 
+			indexText.classList.toggle('noShow');
+		break;
+		case 'Experience & Skills':
+			indexText.classList.toggle('noShow');
+		break;
+		case 'Education':
+			indexText.classList.toggle('noShow');
+		break;
+		case 'All Projects':
+			indexText.classList.toggle('noShow');
+		break;
+		default:
+			indexText.classList.toggle('noShow');
+	}
+}
 
 //Adding projects to project section 
-const personalProjectSection = document.getElementById('personalProject');
-const codecademyProjectSection = document.getElementById('codecademyProject');
+const projectSection = document.getElementById('projectsAll');
+const featuredProject = document.getElementById('featured');
 
-class Project {
-	constructor(title, description, year, source) {
-		this._title = title,
-		this._description = description,
-		this._year = year,
-		this._source = source
+let projectData = [
+	{
+	 name: 'Ms. Margie`s',
+	 img: 'img/ms_margie_screenshot.png',
+	 description: 'Online ordering webpage for sweet potato pies',
+	 year: '2023',
+	 source: 'https://ms-margie-a7552a.netlify.app/',
+	 featured: true
+	},
+	{
+	 name: 'Tea Cozy',
+	 img: 'img/noImage.jpg',
+	 description: 'Single page project for a Tea Shop',
+	 year: '2023',
+	 source: 'https://github.com/Sweetcake610/teaCozyProject',
+	 featured: false
+	},
+	{
+	 name: 'Appointment Planner',
+	 img: 'img/noImage.jpg',
+	 description: 'appointment planner site using React.js',
+	 year: '2023',
+	 source: 'https://github.com/Sweetcake610/AppointmentPlanner',
+	 featured: false
+	},
+]
+
+projectData.forEach((project) => {
+	let projectDiv = document.createElement('div');
+		projectDiv.setAttribute('class', 'projectInfo');
+		projectDiv.innerHTML = '<h4>' + project.name + '</h4>' +
+								'<img class= projectImage src=' + project.img + ' alt= "project image">' +
+								'<p><strong>Description:</strong> ' + project.description + '</p>' +
+								'<p><strong>Year Completed:</strong> ' + project.year+ '</p>' +
+								'<p><strong>Source: </strong><a href=' + project.source + ' target= _blank>' + project.name + '</a></p>';
+		projectSection.appendChild(projectDiv);
+
+});
+
+projectData.forEach((project) => {
+	if(project.featured === true) {
+		let featuredDiv = document.createElement('div');
+		featuredDiv.setAttribute('class', 'projectInfo');
+		featuredDiv.innerHTML = '<h4>' + project.name + '</h4>' +
+								'<img class= projectImage src=' + project.img + ' alt= "project image">' +
+								'<p><strong>Description:</strong> ' + project.description + '</p>' +
+								'<p><strong>Year Completed:</strong> ' + project.year+ '</p>' +
+								'<p><strong>Source: </strong><a href=' + project.source + ' target= _blank>' + project.name + '</a></p>';
+		featuredProject.appendChild(featuredDiv);
 	}
-	get personalProjectInfo () {
-		let projectDiv = document.createElement('div');
-		projectDiv.setAttribute('class', 'project-info');
-		projectDiv.innerHTML = '<h4>' + this._title + '</h4>' +
-								'<p><strong>Description:</strong> ' + this._description + '</p>' +
-								'<p><strong>Year Completed:</strong> ' + this._year + '</p>' +
-								'<p><strong>Source: </strong><a href=' + this._source + ' target= _blank>' + this._title + '</a></p>';
-		personalProjectSection.appendChild(projectDiv);
-	}
-
-	get codecademyProjectInfo () {
-		let projectDiv = document.createElement('div');
-		projectDiv.setAttribute('class', 'project-info');
-		projectDiv.innerHTML = '<h4>' + this._title + '</h4>' +
-								'<p><strong>Description:</strong> ' + this._description + '</p>' +
-								'<p><strong>Year Completed:</strong> ' + this._year + '</p>' +
-								'<p><strong>Source: </strong><a href=' + this._source + ' target= _blank>' + this._title + '</a></p>';
-		codecademyProjectSection.appendChild(projectDiv);
-	}
-	
-}
-
-let projectOne = new Project('Personal Website', 'Codecademy Portfolio Project: Create personal website', '2023', '#');
-let projectTwo = new Project('Easyl', 'Art Informational Website designed by graphic designer: Bianca', 'In Progress', '#'); 
-let projectThree = new Project("CheatSheet", "Informational CheatSheet on syntax for HTML, CSS, and JS", "2023", 'https://github.com/Sweetcake610/cheatSheet');
-let projectFour = new Project('Appointment Planner', 'Codecademy Challenge Project using React', '2023', 'https://github.com/Sweetcake610/AppointmentPlanner');
-let projectFive = new Project('Tea Cozy', 'Single page project for a Tea Shop', '2022/23', 'https://github.com/Sweetcake610/teaCozyProject');
-
-// Personal project section 
-projectOne.personalProjectInfo;
-projectTwo.personalProjectInfo;
+})
 
 
-//Codecadmey project section
-projectThree.codecademyProjectInfo;
-projectFive.codecademyProjectInfo;
-projectFour.codecademyProjectInfo;
+
+// let projectTwo = new Project('Easyl', 'img/noImage.jpg','Art Informational Website designed by graphic designer: Bianca', 'In Progress', '#'); 
+// let projectThree = new Project("CheatSheet", 'img/noImage.jpg', "Informational CheatSheet on syntax for HTML, CSS, and JS", "2023", 'https://github.com/Sweetcake610/cheatSheet');
+
