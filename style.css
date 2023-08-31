@@ -80,36 +80,10 @@ body {
     padding: 40px 5px;
     border-radius: 50%;
   }
-
-
-.bounce-in {
-	animation: bounce-in 2s ease;
-  }
-  @keyframes bounce-in {
-	0% {
-	  opacity: 0;
-	  transform: scale(.3);
-	}
-	50% {
-	  opacity: 1;
-	  transform: scale(1.05);
-	}
-	70% { transform: scale(.9); }
-	100% { transform: scale(1); }
-  }
-.spread-out{
-	animation: spread-out 2s ease;
-  }
-  @keyframes spread-out {
-	0% {
-		opacity: 0;
-		transform: scale(.3);
-	  }
-	  100% { transform: scale(5); }
-  }
   
 /***********Header, with name and job title, Styling*************/
  header{
+	width: 80%;
     height: auto;
 	margin-top: 80px;
 	text-align: center;
@@ -126,6 +100,7 @@ body {
 
 /**************Styling for contentDiv outer container and inner text Section****************/
 .contentInfo {
+	width: 80%;
 	padding: 10px;
 	height: auto;
 }
@@ -159,15 +134,15 @@ body {
 	margin: 10px 0;
 }
 /******Specific elements that need additional styling in Main Content section*****/
-#about, #featured, #contact {
+#about {
 	height: 300px;
-
 }
 .photo {
 	float: left;
     height: auto;
-    width: 30%;
-    margin: -45px 20px 10px;
+    width: 35%;
+    margin: 0 20px 10px;
+	border-radius: 5px;
 }
 .photo img {
 	width: 75%;
@@ -175,10 +150,13 @@ body {
 }
 #featured {
 	height: auto;
-	margin: 5px 10px;
+	
+}
+#featured h4 {
+	text-align: center;
 }
 #contact {
-	width: 50%;
+	width: 60%;
 	height: 110px;
 	margin-left: 145px;
     text-align: center;
@@ -215,21 +193,21 @@ a:hover {
 #projectsAll {
 	height: auto;
 	display: flex;
-	text-align: center;
 	flex-wrap: wrap;
     justify-content: center;
 }
 
 .projectInfo {
-	width: 275px;
+	width: 50%;
     height: auto;
-	margin: 15px;
+	margin: 15px auto;
     padding: 5px 15px;
     border: 4px solid #002500;
     box-shadow: 5px 5px #002500;
     border-radius: 10px;
 }
 .projectInfo h4{
+	text-align: center;
 	font-size: 1.2rem;
 	margin: 10px auto 10px;
 }
@@ -251,10 +229,35 @@ a:hover {
 	color:#fff;
 }
 .projectImage {
-	width: 80%;
+	width: 100%;
 	height: auto;
 	border: 2px solid #450C27;
 	border-radius: 10px;
 }
-
+/*****Animation added to NavButtons and Context Divs******/
+.bounce-in {
+	animation: bounce-in 2s ease;
+  }
+  @keyframes bounce-in {
+	0% {
+	  opacity: 0;
+	  transform: scale(.3);
+	}
+	50% {
+	  opacity: 1;
+	  transform: scale(1.05);
+	}
+	70% { transform: scale(.9); }
+	100% { transform: scale(1); }
+  }
+.spread-out{
+	animation: spread-out 2s ease;
+  }
+  @keyframes spread-out {
+	0% {
+		opacity: 0;
+		transform: scale(.3);
+	  }
+	  100% { transform: scale(1); }
+  }
 
