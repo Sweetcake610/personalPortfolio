@@ -1,113 +1,161 @@
-/* mobile sizing css stylining sheet */
-@media only screen and (max-width:480px) {
-	header {
-		display: block;
-	}
-    .name {
-		font-size: 1.5rem;
-    	width: 100%;
-    	text-align: center;
-		margin: 0 auto;
-	}
-    .nav {
-		font-size: 1rem;
-        width: 80%;
-        text-align: center;
-        margin: 0 auto 10px;
-        justify-content: center;
-	}
-}
-
-@media only screen and (max-width:480px) {
-    #graphic {
-        height: 290px;
+/******* MOBILE STYLING: Body and Main outer Div Section Styling *******/
+@media only screen and (max-width:768px) {
+    body {
+        display: block;
+        width: 100%;
+        height: auto;
     }
-	.one, .two, .three, .four, .five {
-        position: absolute;
-        margin: 0 auto;
-        width: 250px;
-        height: 250px;
+    #navSideBarDiv {
+        display: none;
+    }
+    #navMobileDiv {
+        display: block;
+        width: 100%;
+    }
+    #contentDiv {
+        width: 100%;
+    }
+/***********Header, with name and job title, Styling*************/
+	#mainHeader {
+		width: 100%;
+        margin-top: 40px;
+	}
+    #name, #jobTitle {
+		font-size: 1.4rem;
+	}
+/***********Navigation Side Bar Styling***************/
+    #squareDesign {
+        width: 105%;
+        height: 60px;
+        display: inline-flex;
+        margin: -10px 0px 20px -15px;
+        justify-content: center;
+        align-items: center;
+    }
+    #bigCircle {
+        width: 70px;
+        height: 70px;
+        margin: 0px 5px 5px 5px;
     }
     #graphic-photo {
-        height: 250px;
+        height: 70px;
+        margin: 0px auto;
     }
-}
-
-@media only screen and (max-width:480px) {
-    .about-info h2 {
+    .circle {
+        width: 60px;
+        height: 60px;
+        margin: 0px 5px 5px 5px;
+    }
+    .navButton {
+        font-size: 0.5rem;
+        padding: 10px 5px;
+    }
+/**************Styling for contentDiv outer container and inner text Section****************/
+    .contentInfo {
+        width: 100%;
+        padding: 10px;
+        height: auto;
+    }
+    .contentInfo h2 {
         font-size: 1.6rem;
-        margin: 0 auto;
-        padding-bottom: 10px;
+        margin: 5px 0;
         text-align: center;
     }
-    .about-info p {
-        font-size: 1rem;
-        margin: 0 auto;
-        text-align: center;
+    .infoDiv h3 {
+        font-size: 1.3rem;
     }
-    .about-info h3 {
-        font-size: 1.4rem;
-        text-align: center;
+    .infoDiv h4 {
+        font-size: 1.0rem;
+        font-style: italic;
+        margin: 10px auto 10px;
     }
-    .about-info li {
-        font-size: 0.8rem;
-        margin: 10px auto;
-    }
-    /* .skills {
+    .infoDiv p {
         font-size: 0.7rem;
-        margin: 5px;
-    } */
-    .fa-2x {
-        font-size: 1.8rem;
+        margin: 10px 0;
     }
-}
-
-@media only screen and (max-width:480px){
-    #project {
-        display: block;
-    }
-    #projectTitle {
-        font-size: 1.6rem;
-        margin: 20px 0 5px 0;
-        text-align: center;
-    }
-    .titleP {
-        font-size: 1.4rem;
-        text-align: center;
-    }
-    #personalProject,
-    #codecademyProject {
-        width: 80%;
-        height: auto;
-        display: block;
-        text-align: center;
-        margin: 0 auto;
-}
-    .project-info {
-        width: 200px;
-        height: auto;
-        margin: 20px auto;
-    }
-    .project-info h4{
-        font-size: 1.1rem;
-    }
-    .project-info p {
+    .skills {
         font-size: 0.8rem;
     }
-
-    .contact-list {
-        font-size: 1rem;
+/******Specific elements that need additional styling in Main Content section*****/
+    #contact {
+        width: 90%;
     }
-    .footer h2 {
-        font-size: 1.6rem;
-        margin: 5px auto;
-        text-align: center;
+    #contact h4 {
+        font-size: 1.1rem;
+        padding: 5px;
     }
-    .footer ul {
+    ul .contact-list {
+        font-size: 0.9rem;
+    }
+/*****************Styling Project Section**************/
+    .projectInfo {
         width: 80%;
-        margin: 10px auto;
+    }
+    .projectInfo h4{
         text-align: center;
-        padding: 0;
+        font-size: 1.1rem;
+        margin: 10px auto 10px;
+    }
+    
+    .projectInfo p {
+        font-size: 0.6rem;
+        margin: 10px 0;
+        overflow-wrap: break-word;
     }
 }
-
+@media only screen and (min-width:768px) and (max-width: 1024px) {
+    #mainHeader {
+		width: 100%;
+        margin-top: 40px;
+	}
+    #contentDiv {
+        width: 70%;
+        height: auto;
+        margin-left: 80px;
+    }
+    .contentInfo h2 {
+        font-size: 1.6rem;
+        margin: 5px 0;
+        text-align: center;
+    }
+    .infoDiv h3 {
+        font-size: 1.3rem;
+    }
+    .infoDiv h4 {
+        font-size: 1.1rem;
+        font-style: italic;
+        margin: 10px auto 10px;
+    }
+    .infoDiv p {
+        font-size: 1.0rem;
+        margin: 10px 0;
+    }
+    .skills {
+        font-size: 1.0rem;
+    }
+/******Specific elements that need additional styling in Main Content section*****/
+    #contact {
+        width: 90%;
+    }
+    #contact h4 {
+        font-size: 1.1rem;
+        padding: 5px;
+    }
+    ul .contact-list {
+        font-size: 0.9rem;
+    }
+    /*****************Styling Project Section**************/
+    .projectInfo {
+        width: 80%;
+    }
+    .projectInfo h4{
+        text-align: center;
+        font-size: 1.1rem;
+        margin: 10px auto 10px;
+    }
+    .projectInfo p {
+        font-size: 0.6rem;
+        margin: 10px 0;
+        overflow-wrap: break-word;
+    }
+}
