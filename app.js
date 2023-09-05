@@ -19,22 +19,22 @@ navCirclesArray.forEach((navCircle, index) => {
 		console.log(navCircleText);
 		if(navCircleText === 'Home') {
 			contentInfoArray.map(changeContentShow);
-			console.log('showing home page content');
+			console.log('Displaying home content');
 			contentInfo[0].classList.remove('noShow')
 			contentInfo[0].classList.add('spread-out')
 		} else if(navCircleText === 'Experience & Skills') {
 			contentInfoArray.map(changeContentShow);
-			console.log('Showing Skills content');
+			console.log('Displaying Skills content');
 			contentInfo[1].classList.remove('noShow');
 			contentInfo[1].classList.add('spread-out')
 		} else if(navCircleText === 'Education') {
 			contentInfoArray.map(changeContentShow);
-			console.log('Showing Education content');
+			console.log('Displaying Education content');
 			contentInfo[2].classList.remove('noShow');
 			contentInfo[2].classList.add('spread-out')
 		} else if(navCircleText === 'All Projects') {
 			contentInfoArray.map(changeContentShow);
-			console.log('Showing projects content');
+			console.log('Displaying projects content');
 			contentInfo[3].classList.remove('noShow');
 			contentInfo[3].classList.add('spread-out')
 		} else {

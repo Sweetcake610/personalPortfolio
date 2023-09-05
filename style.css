@@ -21,6 +21,9 @@ body {
 	width: 30%;
 	height: auto;
 }
+#navMobileDiv {
+	display: none;
+}
 #contentDiv {
 	width: 70%;
 	height: auto;
@@ -74,6 +77,9 @@ body {
 	background-color: #F9F5E3;
 	color:#450C27;
 }
+q {
+	font-size: 0.9rem;
+}
 .navButton {
 	border: none;
     font-size: 1.4rem;
@@ -82,7 +88,7 @@ body {
   }
   
 /***********Header, with name and job title, Styling*************/
- header{
+ #mainHeader{
 	width: 80%;
     height: auto;
 	margin-top: 80px;
@@ -109,7 +115,7 @@ body {
 }
 .contentInfo h2 {
 	font-size: 2.0rem;
-	margin: 20px 0 5px 0;
+	margin: 10px 0;
 	text-align: center;
 }
 .infoDiv {
@@ -129,13 +135,20 @@ body {
 	font-size: 1.1rem;
 	margin: 10px 0;
 }
-.infoDiv li {
-	font-size: 1.3rem;
-	margin: 10px 0;
+ul {
+	padding-left: 0px;
 }
+.skills {
+	list-style-type: none;
+	font-size: 1.4rem;
+	display: inline-block;
+    margin: 5px 10px;
+    padding: 10px;
+}
+
 /******Specific elements that need additional styling in Main Content section*****/
 #about {
-	height: 300px;
+	height: auto;
 }
 .photo {
 	float: left;
@@ -148,39 +161,27 @@ body {
 	width: 75%;
 	height: 75%;
 }
-#featured {
-	height: auto;
-	
-}
-#featured h4 {
-	text-align: center;
-}
+
 #contact {
-	width: 60%;
+	width: 80%;
 	height: 110px;
-	margin-left: 145px;
     text-align: center;
     display: inline-flex;
     align-items: center;
 }
 #contact h4 {
+	font-size: 1.4rem;
 	padding: 5px;
 }
-.skills {
-	list-style-type: none;
-	font-size: 1.7rem;
-	display: inline-block;
-    margin: 5px 10px;
-    padding: 10px;
+#contact ul {
+	padding: 0px;
 }
-/*****************Styling Contact Info on Home Page Section**************/
-
 ul .contact-list {
 	list-style-type: none;
-	display: inline-block;
-	font-size: 1.4rem;
+	display: inline;
+	font-size: 1.7rem;
     margin: 10px;
-    padding: 10px;
+    padding: 20px 5px 2px 5px;
 }
 .contact-list:hover {
 	background-color:  #002500;
@@ -198,9 +199,9 @@ a:hover {
 }
 
 .projectInfo {
-	width: 50%;
+	width: 70%;
     height: auto;
-	margin: 15px auto;
+	margin: 10px auto;
     padding: 5px 15px;
     border: 4px solid #002500;
     box-shadow: 5px 5px #002500;
@@ -208,7 +209,7 @@ a:hover {
 }
 .projectInfo h4{
 	text-align: center;
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 	margin: 10px auto 10px;
 }
 
