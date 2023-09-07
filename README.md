@@ -3,10 +3,15 @@
 
 ### Description
 Hello and welcome to my Personal Portfolio!
-Thank you for taking the time to look over some of the work I have completed.
 
 If you want to see the live site please use this link:
 https://sweetcake610.github.io/personalPortfolio.github.io/
 
-I am currently seeking to start my career as a Full Stack Software Engineer and I am currently completing the
-Codecademy Full Stack Software Engineer Certification Program. 
+### Purpose: 
+Create a website portfoli of work that I have completed to showcase my skills as a Full Stack Software Engineer.
+
+### Objective:
+Present creative, clean and functional design throughout the porfolio as well as the examples projects that are showcased.
+
+### Duration:
+An on going process. recent updates to design layout were completed in 5 days.
